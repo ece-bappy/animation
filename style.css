@@ -1,0 +1,94 @@
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#section1, #section2, #section3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-change-2x {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+.color_2 {
+  -webkit-animation: color_2 2s linear infinite alternate both;
+  animation: color_2 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color_2 {
+  0% {
+    background: #1993ea;
+  }
+  100% {
+    background: #f88d8d;
+  }
+}
+@keyframes color_2 {
+  0% {
+    background: #f88d8d;
+  }
+  100% {
+    background: #1993ea;
+  }
+}
+.color_3 {
+  -webkit-animation: color_3 2s linear infinite alternate both;
+  animation: color_3 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color_3 {
+  0% {
+    background: #f47fa0;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color_3 {
+  0% {
+    background: #f47fa0;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.contain {
+  height: 90%;
+  width: 95%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

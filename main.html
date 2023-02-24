@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="color-change-2x" id="section1">
+      <div data-aos="fade-right" class="contain"><h1>Section 2</h1></div>
+    </div>
+    <div class="color_2" id="section2">
+      <div data-aos="fade-left" class="contain"><h1>Section 2</h1></div>
+    </div>
+    <div class="color_3" id="section3">
+      <div data-aos="fade-right" class="contain"><h1>Section 2</h1></div>
+    </div>
+
+    <script>
+      // Set a timer to scroll to section 2 after two seconds
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section2").offsetTop,
+          behavior: "smooth",
+        });
+      }, 4000);
+
+      // Set another timer to scroll to section 3 after four seconds
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section3").offsetTop,
+          behavior: "smooth",
+        });
+      }, 8000);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
