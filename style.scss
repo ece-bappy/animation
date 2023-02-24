@@ -86,7 +86,7 @@ html{
   }
 
   ::-webkit-scrollbar {
-    width: 0px;
+    width: 1px;
   }
 
   .contain{
@@ -103,7 +103,7 @@ html{
 
   /*intro*/
 
-  .animate-charcter
+.animate-charcter
 {
    text-transform: uppercase;
   background-image: linear-gradient(
@@ -120,9 +120,9 @@ html{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear ;
+  animation: textclip 3s linear infinite ;
   display: inline-block;
- font-size: 100px;
+ font-size: 7rem;
  text-align: center;
 }
 

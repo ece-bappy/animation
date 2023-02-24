@@ -17,17 +17,7 @@ html {
 }
 
 .color-change-2x {
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 2s linear infinite alternate both;
-}
-
-@-webkit-keyframes color-change-2x {
-  0% {
-    background: #19dcea;
-  }
-  100% {
-    background: #b22cff;
-  }
 }
 @keyframes color-change-2x {
   0% {
@@ -38,17 +28,7 @@ html {
   }
 }
 .color_2 {
-  -webkit-animation: color_2 2s linear infinite alternate both;
   animation: color_2 2s linear infinite alternate both;
-}
-
-@-webkit-keyframes color_2 {
-  0% {
-    background: #1993ea;
-  }
-  100% {
-    background: #f88d8d;
-  }
 }
 @keyframes color_2 {
   0% {
@@ -59,17 +39,7 @@ html {
   }
 }
 .color_3 {
-  -webkit-animation: color_3 2s linear infinite alternate both;
   animation: color_3 2s linear infinite alternate both;
-}
-
-@-webkit-keyframes color_3 {
-  0% {
-    background: #f47fa0;
-  }
-  100% {
-    background: #b22cff;
-  }
 }
 @keyframes color_3 {
   0% {
@@ -80,7 +50,7 @@ html {
   }
 }
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 1px;
 }
 
 .contain {
@@ -104,17 +74,10 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: textclip 3s linear;
-          animation: textclip 3s linear;
+  animation: textclip 3s linear infinite;
   display: inline-block;
-  font-size: 100px;
+  font-size: 7rem;
   text-align: center;
-}
-
-@-webkit-keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
 }
 
 @keyframes textclip {
