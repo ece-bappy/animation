@@ -17,7 +17,19 @@
   <body>
     <div class="color-change-2x" id="section1">
       <div data-aos="zoom-in-up" class="contain">
-        <h3 class="animate-charcter">WELCOME TO OUR ANIMATION</h3>
+        <div class="wrapper ten">
+          <div>
+            <h3 class="bounce">
+              <span>W</span>
+              <span>E</span>
+              <span>L</span>
+              <span>C</span>
+              <span>O</span>
+              <span>M</span>
+              <span>E</span>
+            </h3>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -29,6 +41,10 @@
       <div data-aos="zoom-in-down" class="contain"><h1>Section 3</h1></div>
     </div>
 
+    <div id="preloader">
+      <span class="loader"></span>
+    </div>
+
     <script>
       // Set a timer to scroll to section 2 after two seconds
       setTimeout(function () {
@@ -36,7 +52,7 @@
           top: document.getElementById("section2").offsetTop,
           behavior: "smooth",
         });
-      }, 4000);
+      }, 6000);
 
       // Set another timer to scroll to section 3 after four seconds
       setTimeout(function () {
@@ -44,11 +60,24 @@
           top: document.getElementById("section3").offsetTop,
           behavior: "smooth",
         });
-      }, 8000);
+      }, 10000);
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <script>
+      $(window).load(function () {
+        // makes sure the whole site is loaded
+        $("#status").slideUp(); // will first fade out the loading animation
+        $("#preloader").delay(2000).slideUp("slow"); // will fade out the white DIV that covers the website.
+      });
+
+      // Animated CSS preloader from http://tobiasahlin.com/spinkit/
+      // Excellent preloader example found here: http://ismet.me/index.html
     </script>
   </body>
 </html>
