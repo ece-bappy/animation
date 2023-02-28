@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      /* Make sure the element fills the screen */
+      .fullscreen {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script>
+      // Get the element to display in fullscreen
+      var elem = document.getElementById("myImage");
+
+      // Define a function to open it in fullscreen
+      function openFullscreen() {
+        // Check if fullscreen is supported by the browser
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        }
+      }
+
+      // Call the function when the page loads
+      openFullscreen();
+    </script>
+  </head>
+  <body>
+    <!-- This is the element to display in fullscreen -->
+    <img id="myImage" src="club.png" class="fullscreen" />
+  </body>
+</html>

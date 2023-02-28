@@ -8,7 +8,7 @@ html, span {
   padding: 0;
 }
 
-#section1, #section2, #section3 {
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10 {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -16,10 +16,10 @@ html, span {
   align-items: center;
 }
 
-.color-change-2x {
-  animation: color-change-2x 2s linear infinite alternate both;
+.color_1 {
+  animation: color_1 2s linear infinite alternate both;
 }
-@keyframes color-change-2x {
+@keyframes color_1 {
   0% {
     background: #19dcea;
   }
@@ -47,6 +47,18 @@ html, span {
   }
   100% {
     background: #b22cff;
+  }
+}
+.color_4 {
+  animation: color_4 2s linear infinite alternate both;
+}
+
+@keyframes color_4 {
+  0% {
+    background: #ff2626;
+  }
+  100% {
+    background: #76e6ff;
   }
 }
 ::-webkit-scrollbar {
@@ -197,7 +209,6 @@ html, span {
   font-size: 48px;
   font-weight: bold;
   letter-spacing: 2px;
-  font-family: Arial, Helvetica, sans-serif;
   color: #0082b5;
   font-size: 3rem;
   animation: smokeOut 1s ease-in-out infinite alternate;
@@ -205,7 +216,7 @@ html, span {
 }
 
 .loader2:before {
-  content: "Website For ECE Club";
+  content: "WEBSITE FOR ECE Club";
 }
 
 @keyframes smokeOut {
@@ -214,4 +225,64 @@ html, span {
     filter: blur(5px);
     letter-spacing: 4px;
   }
+}
+h1 {
+  text-align: center;
+}
+
+.contain_r {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 95%;
+  background: white;
+  border-radius: 10px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 33.33%;
+}
+.member img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+#section3 .contain {
+  display: flex;
+  flex-direction: column;
+}
+#section3 .contain .feature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+#section3 .contain .feature .feat {
+  margin: 5px 16px;
+  height: 300px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section4 .contain, #section5 .contain, #section6 .contain, #section7 .contain {
+  justify-content: space-evenly;
+}
+#section4 .contain .info h1, #section5 .contain .info h1, #section6 .contain .info h1, #section7 .contain .info h1 {
+  text-align: left;
+  padding: 10px 10px;
+}
+#section4 .contain .info p, #section5 .contain .info p, #section6 .contain .info p, #section7 .contain .info p {
+  padding: 10px 10px;
 }/*# sourceMappingURL=style.css.map */

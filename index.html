@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="color-change-2x" id="section1">
+    <div class="color_1" id="section1">
       <div data-aos="zoom-in-up" class="contain">
         <div class="wrapper ten">
           <div>
@@ -38,14 +38,135 @@
         <div data-aos="zoom-in-left" class="section_2">
           <span class="loader2"></span>
         </div>
-        <div data-aos="zoom-in-right" class="section_2">
+        <div data-aos="zoom-in" data-aos-delay="500" class="section_2">
           <img src="club.png" height="300px" alt="" />
         </div>
       </div>
     </div>
 
     <div class="color_3" id="section3">
-      <div data-aos="zoom-in-down" class="contain"><h1>Section 3</h1></div>
+      <div data-aos="zoom-in-up" class="contain">
+        <h1 data-aos="zoom-out-down" data-aos-delay="300">
+          WHAT FEATURE THE WEBSITE WILL HAVE?
+        </h1>
+        <div class="feature">
+          <div data-aos-delay="400" data-aos="zoom-out-up" class="feat">
+            <h2>Club Overview</h2>
+          </div>
+          <div data-aos-delay="600" data-aos="zoom-out-up" class="feat">
+            <h2>Event Promotion</h2>
+          </div>
+          <div data-aos-delay="800" data-aos="zoom-out-up" class="feat">
+            <h2>Event Registration</h2>
+          </div>
+          <div data-aos-delay="1000" data-aos="zoom-out-up" class="feat">
+            <h2>Alumni Page</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="color_4" id="section4">
+      <div data-aos="zoom-in-up" class="contain">
+        <div data-aos="zoom-in-right" data-aos-delay="300" class="info">
+          <h1>Club Overview</h1>
+          <p>
+            Overview Of the club. The page Will Show Current Commitee and Club
+            Activites
+          </p>
+        </div>
+        <div data-aos="zoom-in-left" data-aos-delay="300" class="img">
+          <img src="/images/overview.svg" height="300px" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="color_1" id="section5">
+      <div data-aos="zoom-in-up" class="contain">
+        <div data-aos="zoom-out-up" data-aos-delay="300" class="img">
+          <img src="/images/promot.svg" height="300px" alt="" />
+        </div>
+        <div data-aos="zoom-in-right" data-aos-delay="300" class="info">
+          <h1>Event Promotion</h1>
+          <p>
+            Promotion of Clubs latest Event. Visitor will be able to know
+            details about the upcomming event.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="color_2" id="section6">
+      <
+      <div data-aos="zoom-in-up" class="contain">
+        <div data-aos="zoom-in-right" data-aos-delay="300" class="info">
+          <h1>Event Registration</h1>
+          <p>
+            Participant can register directly from website. They Can make
+            payment for entry.
+          </p>
+        </div>
+        <div data-aos="zoom-out-up" data-aos-delay="300" class="img">
+          <img src="/images/register.svg" height="300px" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="color_3" id="section7">
+      <div data-aos="zoom-in-up" class="contain">
+        <div data-aos="zoom-out-up" data-aos-delay="300" class="img">
+          <img src="/images/alumni.svg" height="300px" alt="" />
+        </div>
+        <div data-aos="zoom-in-right" data-aos-delay="300" class="info">
+          <h1>Alumni Page</h1>
+          <p>
+            Alumni of ECE degree can create there page and every member will be
+            able to visit their page.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="color_4" id="section8">
+      <div data-aos="zoom-in-down" class="contain">
+        <div class="contain_r">
+          <div data-aos="zoom-in-down" class="">
+            <h1>Our Team</h1>
+          </div>
+
+          <div class="team">
+            <div class="member" data-aos="zoom-in-up" data-aos-delay="500">
+              <img src="images/image2.png" alt="" />
+              <p>Azizul Hakim</p>
+              <p>1802143</p>
+            </div>
+
+            <div
+              class="member"
+              data-aos="zoom-in-up"
+              data-aos-duration="500"
+              data-aos-delay="750"
+            >
+              <img src="images/image3.png" alt="" />
+              <p>Tamanna Afrin</p>
+              <p>1802128</p>
+            </div>
+
+            <div
+              class="member"
+              data-aos="zoom-in-up"
+              data-aos-duration="500"
+              data-aos-delay="1000"
+            >
+              <img
+                style="transform: scaleX(-1)"
+                src="images/image1.png"
+                alt=""
+              />
+              <p>Rajinus Salehat</p>
+              <p>1802125</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="preloader">
@@ -68,6 +189,41 @@
           behavior: "smooth",
         });
       }, 10000);
+
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section4").offsetTop,
+          behavior: "smooth",
+        });
+      }, 14000);
+
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section5").offsetTop,
+          behavior: "smooth",
+        });
+      }, 18000);
+
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section6").offsetTop,
+          behavior: "smooth",
+        });
+      }, 22000);
+
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section7").offsetTop,
+          behavior: "smooth",
+        });
+      }, 26000);
+
+      setTimeout(function () {
+        window.scrollTo({
+          top: document.getElementById("section8").offsetTop,
+          behavior: "smooth",
+        });
+      }, 30000);
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
