@@ -100,7 +100,7 @@ html,span{
     }
 
   ::-webkit-scrollbar {
-    width: 1px;
+    width: 0px;
   }
 
   .contain{
@@ -208,9 +208,7 @@ html,span{
 }
 
 
-.box{
-  
-}
+
 .loader {
   width: 200px;
   height: 200px;
@@ -271,7 +269,7 @@ html,span{
   text-shadow: 0 0 1px white;
 }
 .loader2:before {
-  content: "WEBSITE FOR ECE Club";
+  content: "WEBSITE FOR ECE CLUB";
 }
 
 @keyframes smokeOut {
@@ -349,3 +347,41 @@ h1 {
     }
   }
 }
+
+
+#section8{
+  .contain{
+    display: flex;
+  flex-direction: column;
+  .frameworks{
+    height: 70%;
+    width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .frame{
+        text-align: center;
+        h2{
+          padding: 30px 5px;
+        }
+      }
+    
+  }
+  }
+}
+
+
+ 
+
+
+    /* frame */
+
+.team1  {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+ 
+}
+.team1 .member{padding:10px 0}
+
